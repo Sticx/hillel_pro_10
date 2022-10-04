@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const newImg =document.createElement('img');
+
+
+    const changeImg = ()=>  document.querySelector('img').src = 'images/' + Math.ceil(Math.random() * 9) + '.jpg';
+
+
+
+    document.body.appendChild(newImg);
+    changeImg();
+
+    function changeSize(width,height) {
+        let sized = document.querySelector('img')
+
+        sized.width=screen.width*0.8;
+        sized.height=screen.height*0.8;
+
+    }
+changeSize(screen.innerWidth,screen.innerHeight);
+
+</script>
+</body>
+</html>
