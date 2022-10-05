@@ -9,18 +9,13 @@
 <button id="first" >Promt</button>
 <button id="second">Confirm</button>
 <script>
-
   first.onclick = function () {
 
      let location='https://'+prompt('Введите ссылку','youtube.com');
-      console.log(location);
       second.onclick = function (){
           open(location);
       }
   }
-
-
-
 </script>
 
 </body>
