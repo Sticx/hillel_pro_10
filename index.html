@@ -9,10 +9,10 @@
 <button id="first" >Promt</button>
 <button id="second">Confirm</button>
 <script>
-  first.onclick = function () {
+  first = function () {
 
      let location='https://'+prompt('Введите ссылку','youtube.com');
-      second.onclick = function (){
+     second = function (){
           open(location);
       }
   }
