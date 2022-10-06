@@ -6,16 +6,20 @@
 </head>
 <body>
 
-<button id="first" >Promt</button>
-<button id="second">Confirm</button>
+<button class="first" >Promt</button>
+<button class="second">Confirm</button>
 <script>
-  first = function () {
+
+    let getlink = document.querySelector('.first')
+    let confirm = document.querySelector('.second')
+
+  link = function () {
 
      let location='https://'+prompt('Введите ссылку','youtube.com');
-     second = function (){
-          open(location);
-      }
+      confirm.addEventListener("click",function () {open(location)});
   }
+    getlink.addEventListener("click",link);
+
 </script>
 
 </body>
