@@ -10,15 +10,16 @@
 <button class="second">Confirm</button>
 <script>
 
-    let getlink = document.querySelector('.first')
-    let confirm = document.querySelector('.second')
+    let getLink = (document.querySelector('.first'));
 
-  link = function () {
-
-     let location='https://'+prompt('Введите ссылку','youtube.com');
-      confirm.addEventListener("click",function () {open(location)});
+    link = function () {
+      let confirm = document.querySelector('.second');
+     let location=`https://${prompt('Введите ссылку','youtube.com')}`;
+      confirm.addEventListener("click",function () {
+          open(location)
+      });
   }
-    getlink.addEventListener("click",link);
+    getLink.addEventListener("click",link);
 
 </script>
 
